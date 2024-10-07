@@ -46,7 +46,7 @@ ColorStream::FreenectVideoModeMap ColorStream::getSupportedVideoModes() const
 {
   FreenectVideoModeMap modes;
   //                    pixelFormat, resolutionX, resolutionY, fps    freenect_video_format, freenect_resolution
-  modes[makeOniVideoMode(ONI_PIXEL_FORMAT_RGB888, 512, 424, 30)] = 0;
+  modes[makeOniVideoMode(ONI_PIXEL_FORMAT_RGB888, 1280, 720, 60)] = 0;
   modes[makeOniVideoMode(ONI_PIXEL_FORMAT_RGB888, 1920, 1080, 30)] = 1;
 
   return modes;
